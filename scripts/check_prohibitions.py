@@ -58,7 +58,7 @@ def is_inside_quotes(line: str, idx: int) -> bool:
     通过数当前字符之前的引号数量判断（奇数=在引号内）。
     """
     prefix = line[:idx]
-    for open_q, close_q in [('「', '」'), ('“', '”'), ('"', '"')]:
+    for open_q, close_q in [('「', '」'), ('“', '”'), ('"', '"'), ('《', '》')]:
         opens = prefix.count(open_q)
         closes = prefix.count(close_q)
         if opens > closes:
