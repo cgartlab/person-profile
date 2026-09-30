@@ -1,5 +1,12 @@
 # CHANGELOG.md
 
+## [0.1.1] - 2026-09-30
+
+### Fixed
+- 移除 frontmatter 的 `metadata.hermes` 平台耦合块，只保留标准 name/description/version/author/license
+- `delegate_task` 硬编码工具名改为能力级描述（用当前 harness 的 subagent / 委派工具），解决跨 harness 可移植性
+- 移除对 3 个不存在 skill 的引用（`person-profile-research` / `grounded-citations` / `concept-synthesis`），「相关技能」与「不用于」章节同步更新
+
 ## [0.1.0] - 2026-09-30
 
 ### Added
