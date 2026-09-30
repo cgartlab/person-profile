@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## [1.0.0] - 2026-09-30
+## [0.1.0] - 2026-09-30
 
 ### Added
 - 项目骨架：README、DESIGN、CHANGELOG

@@ -84,7 +84,7 @@ python scripts/check_bidirectional.py path/to/library/
 
 ## 版本
 
-- **v1.0.0** — 首版：核心工作流、11 节模板、5 级证据分级、17 项验收清单
+- **v0.1.0** — 首版：核心工作流、11 节模板、5 级证据分级、17 项验收清单
 
 ## 许可
 
