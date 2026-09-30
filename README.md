@@ -22,7 +22,7 @@
 ## 目录结构
 
 ```
-person-profile-skill/
+person-profile/
 ├── SKILL.md              # 主入口，agent 加载此文件即可获得完整工作流
 ├── README.md             # 本文件，项目介绍与快速开始
 ├── DESIGN.md             # 设计哲学与决策记录（Why not What）
