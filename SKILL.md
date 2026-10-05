@@ -1,13 +1,9 @@
 ---
 name: person-profile
 description: Use when 老板要新增人物档案、维护人物档案、统一档案格式或补齐双向链。触发词：人物档案、建档、补链、统一格式。
-version: 0.1.0
+version: 0.1.1
 author: CGArtLab
 license: MIT
-metadata:
-  hermes:
-    tags: [person, profile, template, evidence, verification, workflow]
-    related_skills: [person-profile-research, quill, grounded-citations, concept-synthesis]
 ---
 
 # Person Profile / 人物档案
@@ -25,9 +21,9 @@ metadata:
 - 老板说"同规格呈现"、"高质量"、"事实核查"
 
 **不用于**：
-- 单个档案的搜索与证据分级（用 `person-profile-research`）
+- 单个档案的搜索与证据分级（本 skill 聚焦建档流程，不处理搜索本身）
 - 长段落论述字段的写作（用 `quill`）
-- 概念去重与合并（用 `concept-synthesis`）
+- 概念去重与合并（本 skill 只处理人物档案）
 - 公司 / 产品 / 技术档案（本 skill 只处理人物）
 
 ---
@@ -69,7 +65,7 @@ metadata:
 
 ### [2] 前置研究（并行委派）
 
-用 `delegate_task` 派发 3-5 路并行子任务：
+委派 3-5 路并行研究子任务（用当前 harness 的 subagent / 委派工具）：
 
 | 子任务 | 目标 | 输出 |
 |---|---|---|
@@ -274,10 +270,7 @@ docs(人物): 新增 XXX 档案 + 统一标题级别为 ## + 补关系网络双�
 
 ## 相关技能
 
-- `person-profile-research` — 搜索与证据分级纪律（前置研究阶段）
 - `quill` — 长段落论述字段写作
-- `grounded-citations` — 通用引用纪律
-- `concept-synthesis` — 概念去重
 
 ---
 
