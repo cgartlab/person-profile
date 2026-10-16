@@ -4,6 +4,8 @@ description: Use when 老板要新增人物档案、维护人物档案、统一�
 version: 0.1.1
 author: CGArtLab
 license: MIT
+metadata:
+  kind: skill
 ---
 
 # Person Profile / 人物档案
