@@ -11,8 +11,6 @@
 > **一句话概括**：0.1.1 是一次可移植性修复——移除与 Hermes 平台的绑定、硬编码工具名和已失效的技能引用，使 skill 能在任意 harness 上运行。**你不需要做任何事，直接升级即可。**本次变更对应 [#2](https://github.com/cgartlab/person-profile/pull/2)。
 
 ### Fixed
-
-### Fixed
 - 对使用者：skill 不再绑定单一 Agent 平台，可在任意 harness 中使用。技术细节：移除 frontmatter（技能文件开头的元数据区）里的 `metadata.hermes` 平台耦合块（Hermes 是本 skill 原先绑定的一个 Agent 平台），只保留标准 name/description/version/author/license。
 - 对使用者：在不同 harness（承载 agent 运行的宿主环境）之间切换时，不再因工具名不匹配而失败。技术细节：`delegate_task`（将任务委派给子 agent 的调用）不再硬编码工具名，改为用当前 harness 的 subagent / 委派工具的能力级描述，解决跨 harness 可移植性。
 - 对使用者：档案里不再出现已不存在的技能，避免打开时看到失效的相关技能链接。技术细节：移除对 3 个不存在 skill（`person-profile-research` / `grounded-citations` / `concept-synthesis`）的引用，并同步更新「相关技能」与「不用于」章节。
