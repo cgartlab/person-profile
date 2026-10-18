@@ -71,8 +71,35 @@ def scan_file(path: Path) -> list:
     issues = []
     content = path.read_text(encoding="utf-8")
     lines = content.split("\n")
+
+    # AI 残留检查必须在注释剥离之前运行（它本身匹配 <!-- AI generated --> 标记）
+    for pattern in AI_RESIDUE_PATTERNS:
+        for line_no, line in enumerate(lines, 1):
+            if re.search(pattern, line):
+                issues.append((line_no, "AI 残留", pattern, line.strip()))
+
+    LINT_IGNORE_START = "<!-- lint-ignore-start -->"
+    LINT_IGNORE_END = "<!-- lint-ignore-end -->"
+    in_ignore_block = False
+    in_html_comment = False
     
     for line_no, line in enumerate(lines, 1):
+        # 处理 lint-ignore 区块：区块内的行全部跳过
+        if LINT_IGNORE_START in line:
+            in_ignore_block = True
+            continue
+        if in_ignore_block:
+            if LINT_IGNORE_END in line:
+                in_ignore_block = False
+            continue
+        # 处理 HTML 注释块 <!-- ... -->（模板规则说明所在），跳过其中内容
+        stripped = line.strip()
+        if stripped.startswith("<!--"):
+            in_html_comment = True
+        if in_html_comment:
+            if "-->" in line:
+                in_html_comment = False
+            continue
         # 破折号：跳过引号内的
         for dash in PROHIBITED_DASHES:
             start = 0
