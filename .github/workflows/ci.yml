@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-scripts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 脚本语法检查
+        run: python -m py_compile scripts/*.py
+
+      - name: 正例 — 合格 fixture 应通过
+        run: python scripts/validate_library.py tests/fixtures/valid-library/
+
+      - name: 正例 — 双向链完整应通过
+        run: python scripts/check_bidirectional.py tests/fixtures/valid-library/
+
+      - name: 正例 — 无禁词应通过
+        run: python scripts/check_prohibitions.py tests/fixtures/valid-library/
+
+      - name: 反例 — 缺章节应被检出（退出码 1）
+        run: |
+          if python scripts/validate_library.py tests/fixtures/missing-section/; then
+            echo "::error::缺章节 fixture 未被检出，校验器可能失效"
+            exit 1
+          fi
+          echo "✓ 缺章节被正确检出"
+
+      - name: 反例 — 单向链应被检出（退出码 1）
+        run: |
+          if python scripts/check_bidirectional.py tests/fixtures/single-way-link/; then
+            echo "::error::单向链未被检出，校验器可能失效"
+            exit 1
+          fi
+          echo "✓ 单向链被正确检出"

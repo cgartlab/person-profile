@@ -83,6 +83,56 @@ def extract_body(content: str) -> str:
     return content
 
 
+LINT_IGNORE_START = "<!-- lint-ignore-start -->"
+LINT_IGNORE_END = "<!-- lint-ignore-end -->"
+
+
+def strip_lint_ignored(content: str) -> str:
+    """Remove text inside HTML comment blocks and lint-ignore markers.
+
+    Template files keep their rule explanations (e.g. a list of prohibited
+    jargon words being defined) inside <!-- --> comment blocks, so that
+    defining a forbidden word does not itself get flagged as a violation.
+    This strips:
+      - <!-- lint-ignore-start --> ... <!-- lint-ignore-end --> blocks
+      - plain <!-- ... --> HTML comment blocks
+    """
+    start = LINT_IGNORE_START
+    end = LINT_IGNORE_END
+    out = []
+    remaining = content
+    # First: handle explicit lint-ignore markers
+    while True:
+        s_idx = remaining.find(start)
+        if s_idx == -1:
+            break
+        out.append(remaining[:s_idx])
+        e_idx = remaining.find(end, s_idx + len(start))
+        if e_idx == -1:
+            out.append("")
+            break
+        out.append("")
+        remaining = remaining[e_idx + len(end):]
+    out.append(remaining)
+    content = "".join(out)
+    # Second: strip plain HTML comments <!-- ... -->
+    out = []
+    remaining = content
+    while True:
+        s_idx = remaining.find("<!--")
+        if s_idx == -1:
+            out.append(remaining)
+            break
+        out.append(remaining[:s_idx])
+        e_idx = remaining.find("-->", s_idx + 4)
+        if e_idx == -1:
+            out.append("")
+            break
+        out.append("")
+        remaining = remaining[e_idx + 3:]
+    return "".join(out)
+
+
 def find_sections(body: str) -> list:
     """Return list of (heading_level, section_name) for ## and # headings."""
     sections = []
@@ -113,8 +163,8 @@ def validate(path: str, strict: bool = False) -> list:
         if fm.get("author", "").lower() == "chatgpt":
             issues.append("frontmatter 有 author: ChatGPT 残留（模板红线禁止）")
     
-    # 2. Section structure
-    body = extract_body(content)
+    # 2. Section structure (lint-ignored blocks excluded from body scanning)
+    body = extract_body(strip_lint_ignored(content))
     sections = find_sections(body)
     required_names = []
     for level, name in sections:

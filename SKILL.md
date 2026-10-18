@@ -37,6 +37,8 @@ metadata:
 - **校验脚本**：`scripts/` 下 5 份 Python 脚本（可直接运行）
 - **标杆样本**：`benchmarks/` 下 3 份高质量档案作为质量锚点
 
+> **模板与校验器的关系**：`templates/person-archive.md` 允许带 `## Evidence Ledger` 附加章节（证据账本，synaptiai 吸收，放在"主要参考来源"之前）；`templates/person-archive-lite.md` 是精简子集，章节数少于 11 节完整模板。两者都是**起点模板**，不要求自身通过 `validate_library.py` 全量校验——新建档案时按需补全章节即可。校验器以 `tests/fixtures/` 为 CI 基准（正例必须通过、反例必须被检出），不是以模板为基准。
+
 **知识库路径参数**：`--library-root` 参数指定档案库根目录。默认当前工作目录。
 
 ---
