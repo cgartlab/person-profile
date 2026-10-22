@@ -34,6 +34,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("path", help="档案库目录")
     parser.add_argument("--report", action="store_true", help="打印详细报告")
+    parser.add_argument("--profile", choices=["generic", "obsidian"], default="generic",
+                        help="校验配置：generic 不强制 frontmatter 字段（默认）；obsidian 强制知识库 frontmatter 规范")
     args = parser.parse_args()
     
     lib_path = Path(args.path)
@@ -58,7 +60,7 @@ def main():
     
     for fname in archives:
         path = lib_path / fname
-        issues = validate(str(path))
+        issues = validate(str(path), profile=args.profile)
         
         if issues:
             status = "❌"

@@ -7,6 +7,24 @@
 
 > `0.x` 阶段：SKILL.md 的章节结构与输出格式仍可能调整，升级前请阅读对应版本的**一句话概括**。
 
+## [0.2.0](https://github.com/cgartlab/person-profile/compare/v0.1.1...v0.2.0) - 2026-10-22
+> **一句话概括**：0.2.0 让 skill 从「通用骨架」接入真实知识库——三份真实标杆档案入库、模板逐节注释、新增 Obsidian 集成章节。**升级后请读完模板注释，再按新模板落笔。**
+
+### Added
+- `benchmarks/dan-koe.md`、`benchmarks/ruanyifeng.md`、`benchmarks/esor-huang.md`：从 cgartlab-obsidian 知识库拷贝的三份真实标杆档案（278 / 294 / 289 行），替代原先只有评分标准、没有样本的状态。
+- `templates/person-fragment.md`：单节片段模板，用于补双向链、补缺失章节、追加时间线单行。
+- SKILL.md「知识库集成（Obsidian / PARA）」章节：明确档案目录、索引文件、frontmatter 规范、两套校验分工、读写方式。
+
+### Changed
+- `templates/person-archive.md` 重写为 11 节完整骨架，每节带 HTML 注释说明「写什么 / 写多少 / 证据要求 / 常见错误」，落盘前删除。
+- `templates/person-archive-lite.md` 同步加注释，明确 6 节子集定位。
+- 验收清单从 17 项扩到 19 项，新增 frontmatter 知识库规范与两套校验通过两项。
+- 长度参考改为引用真实标杆行数（278 / 294 / 289），不再写记忆中的旧值。
+- README 目录结构与实际文件对齐，移除不存在的 `assets/`，补充 `person-fragment.md` 与三份标杆。
+
+### Removed
+- 模板里的 `## Evidence Ledger` 章节与 frontmatter 的 `living_person` / `notability` 字段。真实知识库档案不用这些字段，保留会造成模板与成稿不一致、`validate_archive.py` 报「非模板章节」。
+
 ## [0.1.1](https://github.com/cgartlab/person-profile/compare/v0.1.0...v0.1.1) - 2026-09-30
 > **一句话概括**：0.1.1 是一次可移植性修复——移除与 Hermes 平台的绑定、硬编码工具名和已失效的技能引用，使 skill 能在任意 harness 上运行。**你不需要做任何事，直接升级即可。**本次变更对应 [#2](https://github.com/cgartlab/person-profile/pull/2)。
 

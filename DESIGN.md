@@ -154,6 +154,20 @@
 
 ---
 
+## 核心决策 11：为什么默认适配 Obsidian 知识库？
+
+早期版本把 skill 设计成「脱离任何知识库」。接入 cgartlab-obsidian 之后发现这个定位有代价：
+
+- **frontmatter 会漂移**：知识库有 `check-frontmatter.mjs`，要求 `type` 在枚举内、`tags` 带 `资源/` 前缀、`created/updated` 是合法日期。skill 若不认这套规范，产出的档案进库就报错。
+- **读写方式会漂移**：知识库里的档案靠 Obsidian wikilink 互联，索引是 `人物-README.md`。skill 若不说明这一点，agent 会写出无法解析的链接。
+- **校验会重复**：知识库校验器管元数据，skill 校验器管 11 节结构。两者若各写一套 frontmatter 检查，会互相打架。
+
+**解法**：skill 默认按 Obsidian/PARA 落盘，但把 frontmatter 规范抽成一张可替换的表（见 SKILL.md「知识库集成」）。非 Obsidian 环境改 `type` / `tags` 即可，11 节结构与写作纪律不变。
+
+这不是把 skill 绑死在一个知识库上，而是明确「默认实现」和「可替换层」的边界。
+
+---
+
 ## 未来演进方向
 
 - **v1.1**：加入「档案元数据规范」（字数统计、更新频率、外部链接健康度）

@@ -41,3 +41,9 @@
 
 - 失误：SKILL.md 写死 harness / 平台耦合、死引用、硬编码工具名 → 规则：移除平台耦合与死引用，保持可移植（commit c8bc96f）
 - 失误：写了 `metadata.kind` 之外的跨平台字段不一致 → 规则：skill 目录契约字段要符合 catalog 规范（commit 4253c1b）
+
+## 文档与真实文件一致性
+
+- 失误：README 目录结构列了 `benchmarks/dan-koe.md`、`benchmarks/ruanyifeng.md`、`templates/person-fragment.md`、`assets/.gitkeep`，实际都不存在 → 规则：改文档前先 `find` 核验每个被引用的路径，引用了就必须让文件真实存在
+- 失误：模板带 `## Evidence Ledger` 章节和 `living_person` / `notability` 字段，但知识库 30 份真实成稿都不用，模板跑 `validate_archive.py` 会报「非模板章节」→ 规则：模板结构必须从真实成稿提炼，不能凭空加章节或字段；模板要能通过它自己定义的校验
+- 失误：README 写「27 份档案」「26 份档案」，知识库实际 30 份档案（33 个 md 含 2 个索引+1 个报告） → 规则：文档里的计数改成现场命令或最新核验值，不写记忆中的旧数

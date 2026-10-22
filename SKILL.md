@@ -1,7 +1,7 @@
 ---
 name: person-profile
 description: Use when 老板要新增人物档案、维护人物档案、统一档案格式或补齐双向链。触发词：人物档案、建档、补链、统一格式。
-version: 0.1.1
+version: 0.2.0
 author: CGArtLab
 license: MIT
 metadata:
@@ -37,9 +37,37 @@ metadata:
 - **校验脚本**：`scripts/` 下 5 份 Python 脚本（可直接运行）
 - **标杆样本**：`benchmarks/` 下 3 份高质量档案作为质量锚点
 
-> **模板与校验器的关系**：`templates/person-archive.md` 允许带 `## Evidence Ledger` 附加章节（证据账本，synaptiai 吸收，放在"主要参考来源"之前）；`templates/person-archive-lite.md` 是精简子集，章节数少于 11 节完整模板。两者都是**起点模板**，不要求自身通过 `validate_library.py` 全量校验——新建档案时按需补全章节即可。校验器以 `tests/fixtures/` 为 CI 基准（正例必须通过、反例必须被检出），不是以模板为基准。
+> **模板与校验器的关系**：`templates/person-archive.md` 是 11 节完整骨架，每节带 HTML 注释说明（落盘前删除）；`templates/person-archive-lite.md` 是 6 节精简子集，用于快速建档；`templates/person-fragment.md` 提供补链 / 补章节的单节片段。三者都是**起点模板**，不要求自身通过 `validate_library.py` 全量校验（精简版缺章节属预期）。校验器以 `tests/fixtures/` 为 CI 基准（正例必须通过、反例必须被检出），不是以模板为基准。
 
 **知识库路径参数**：`--library-root` 参数指定档案库根目录。默认当前工作目录。
+
+---
+
+## 知识库集成（Obsidian / PARA）
+
+本 skill 默认对接 `cgartlab-obsidian` 知识库，也可替换 frontmatter 规范用于其他环境。
+
+| 项目 | 默认值 |
+|---|---|
+| 档案目录 | `03-资源/人物/` |
+| 索引文件 | `03-资源/人物/人物-README.md` |
+| frontmatter type | `reference` |
+| frontmatter tags | `资源/人物` |
+| 必填字段 | `title`、`type`、`description`、`tags`、`created`、`updated` |
+| 知识库校验 | `node scripts/check-frontmatter.mjs`（管 type / tags / 日期） |
+| skill 校验 | `python scripts/validate_archive.py`（管 11 节 + 写作纪律） |
+
+**两套校验分工**：
+- 知识库自带 `check-frontmatter.mjs` 校验 `type` 是否在允许枚举、`tags` 前缀是否为 `资源/`、`created/updated` 是否为合法日期。它**不检查章节结构**。
+- 本 skill 的 `validate_archive.py` 校验 11 节齐全、顺序、标题级别、禁词、破折号、`author: ChatGPT` 残留。它**不重复校验 type/tags**。
+- 两者都要通过，档案才算完工。
+
+**读写方式**：
+- 读取现有档案：`obsidian read path="03-资源/人物/某人.md"` 或直接读文件。
+- 新建档案：先落盘到 `03-资源/人物/`，再跑两套校验。
+- 补链：直接在对方档案的「关系网络」章节追加，格式见 `templates/person-fragment.md`。
+
+**若用于非 Obsidian 环境**：把 frontmatter 的 `type` / `tags` 改为目标系统约定值，或直接删除；校验时用默认的 `--profile generic`（不强制 frontmatter 字段），其余 11 节结构与写作纪律不变。档案文件可放在任意普通文件夹，脚本从任何工作目录用绝对路径调用均可。
 
 ---
 
@@ -129,7 +157,7 @@ metadata:
 
 **长度参考**：
 - **质量底线**：≥ 300 行（不含 frontmatter）
-- **标杆样本**：Dan Koe.md（275 行）、阮一峰.md（293 行）
+- **标杆样本**：`benchmarks/dan-koe.md`（278 行）、`benchmarks/ruanyifeng.md`（294 行）、`benchmarks/esor-huang.md`（289 行）
 - **不设上限**：超过 350 行考虑合并同类信息
 
 ### [4] 补双向链
@@ -206,7 +234,7 @@ docs(人物): 新增 XXX 档案 + 统一标题级别为 ## + 补关系网络双�
 
 ---
 
-## 交付验收清单（17 项）
+## 交付验收清单（19 项）
 
 **每次完工逐条对**：
 
@@ -221,6 +249,8 @@ docs(人物): 新增 XXX 档案 + 统一标题级别为 ## + 补关系网络双�
 - [ ] 可操作建议 ≥ 5 条，动词开头
 - [ ] 主要参考来源 ≥ 10 条，附实际访问到的 URL
 - [ ] frontmatter 无 `author: ChatGPT`
+- [ ] frontmatter 含 `type: reference`、`tags: [资源/人物]`、`created`、`updated`（知识库规范）
+- [ ] 知识库 `check-frontmatter.mjs` 与本 skill `validate_archive.py` 双校验通过
 - [ ] 无非模板章节
 - [ ] 无破折号、无商业黑话、无模型路标词
 - [ ] 关系网络补双向链完成
@@ -275,6 +305,7 @@ docs(人物): 新增 XXX 档案 + 统一标题级别为 ## + 补关系网络双�
 ## 相关技能
 
 - `quill` — 长段落论述字段写作
+- `obsidian-cli` — 知识库读写（`obsidian read/create/append`）
 
 ---
 

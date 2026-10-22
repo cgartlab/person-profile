@@ -143,8 +143,15 @@ def find_sections(body: str) -> list:
     return sections
 
 
-def validate(path: str, strict: bool = False) -> list:
-    """Run all checks, return list of issues."""
+def validate(path: str, strict: bool = False, profile: str = "generic") -> list:
+    """Run all checks, return list of issues.
+
+    profile:
+      - "generic"（默认）：不强制 frontmatter 字段，任何普通文件夹下的档案
+        都能校验 11 节结构、标题级别、禁词、破折号。适合脱离 Obsidian 使用。
+      - "obsidian"：额外强制 Obsidian 知识库 frontmatter 规范
+        （title/type/description/tags/created/updated）。
+    """
     issues = []
     p = Path(path)
     if not p.exists():
@@ -154,14 +161,16 @@ def validate(path: str, strict: bool = False) -> list:
     
     # 1. Frontmatter check
     fm = parse_frontmatter(content)
-    if not fm:
-        issues.append("缺少 frontmatter")
-    else:
-        missing = [f for f in REQUIRED_FRONTMATTER if f not in fm]
-        if missing:
-            issues.append(f"frontmatter 缺少必填字段: {missing}")
-        if fm.get("author", "").lower() == "chatgpt":
-            issues.append("frontmatter 有 author: ChatGPT 残留（模板红线禁止）")
+    if profile == "obsidian":
+        if not fm:
+            issues.append("缺少 frontmatter")
+        else:
+            missing = [f for f in REQUIRED_FRONTMATTER if f not in fm]
+            if missing:
+                issues.append(f"frontmatter 缺少必填字段: {missing}")
+    # author ChatGPT 检查在两种 profile 下都执行
+    if fm.get("author", "").lower() == "chatgpt":
+        issues.append("frontmatter 有 author: ChatGPT 残留（模板红线禁止）")
     
     # 2. Section structure (lint-ignored blocks excluded from body scanning)
     body = extract_body(strip_lint_ignored(content))
@@ -228,9 +237,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("path", help="档案 markdown 路径")
     parser.add_argument("--strict", action="store_true", help="严格模式：借喻词也报错")
+    parser.add_argument("--profile", choices=["generic", "obsidian"], default="generic",
+                        help="校验配置：generic 不强制 frontmatter 字段（默认）；obsidian 强制知识库 frontmatter 规范")
     args = parser.parse_args()
     
-    issues = validate(args.path, strict=args.strict)
+    issues = validate(args.path, strict=args.strict, profile=args.profile)
     if not issues:
         print(f"OK: {args.path}")
         sys.exit(0)

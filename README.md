@@ -2,7 +2,7 @@
 
 一个独立的、通用的、可脱离特定知识库使用的**人物档案 skill**。
 
-为 AI agent 提供结构化的人物档案创建、维护与验证工作流。基于 27 份高质量人物档案的经验沉淀，融合 GitHub 上同类 skill 的成熟做法。
+为 AI agent 提供结构化的人物档案创建、维护与验证工作流。基于 30 份高质量人物档案（cgartlab-obsidian 知识库实践）的经验沉淀，融合 GitHub 上同类 skill 的成熟做法。
 
 ## 项目定位
 
@@ -10,7 +10,7 @@
 
 **不是什么**：
 - 不是模板库（模板只是本 skill 的一个 artifact）
-- 不是特定知识库的插件（不依赖 Obsidian、AFFiNE、Notion 任一）
+- 不是特定知识库的插件（默认适配 Obsidian，可替换 frontmatter 规范用于其他环境）
 - 不是人物百科生成器（不做"一键生成 100 个人"的批量任务）
 
 **核心承诺**：
@@ -27,6 +27,8 @@ person-profile/
 ├── README.md             # 本文件，项目介绍与快速开始
 ├── DESIGN.md             # 设计哲学与决策记录（Why not What）
 ├── CHANGELOG.md          # 版本历史与破坏性变更
+├── LESSONS.md            # 教训→规则清单（会话开始先读）
+├── AGENTS.md             # 仓库协作约定
 │
 ├── references/           # 深度方法论（agent 需要时才加载）
 │   ├── evidence-grading.md     # 5 级证据分级详解
@@ -39,9 +41,9 @@ person-profile/
 │   └── external-references.md  # 吸收的 GitHub 外部参考清单
 │
 ├── templates/            # 可复制的档案模板
-│   ├── person-archive.md       # 11 节完整模板
+│   ├── person-archive.md       # 11 节完整模板（每节带 HTML 注释说明）
 │   ├── person-archive-lite.md  # 6 节精简版（快速建档用）
-│   └── person-fragment.md      # 单节片段模板
+│   └── person-fragment.md      # 单节片段模板（补链 / 补章节用）
 │
 ├── scripts/              # 校验与工具脚本（Python）
 │   ├── validate_archive.py     # 单份档案校验
@@ -50,13 +52,14 @@ person-profile/
 │   ├── check_prohibitions.py   # 禁词与格式违规扫描
 │   └── migrate_heading_level.py # 标题级别批量迁移
 │
-├── benchmarks/           # 高质量标杆档案样本
-│   ├── dan-koe.md            # 英文创作者经济标杆
-│   ├── ruanyifeng.md         # 中文技术博客标杆
+├── benchmarks/           # 高质量标杆档案样本（取自真实知识库）
+│   ├── dan-koe.md            # 英文创作者经济标杆（278 行）
+│   ├── ruanyifeng.md         # 中文技术博客标杆（294 行）
+│   ├── esor-huang.md         # 中文独立作者标杆（289 行）
 │   └── benchmark-rubric.md   # 评分标准
 │
-└── assets/               # 图片、图表、辅助资源
-    └── .gitkeep
+└── tests/                # CI 校验用 fixtures（正例 / 反例）
+    └── fixtures/
 ```
 
 ## 快速开始
@@ -82,9 +85,24 @@ python scripts/validate_library.py path/to/library/
 python scripts/check_bidirectional.py path/to/library/
 ```
 
+## 在 Obsidian 知识库中使用
+
+本 skill 默认适配 `cgartlab-obsidian` 的 PARA 结构：
+
+- **档案目录**：`03-资源/人物/`
+- **索引文件**：`03-资源/人物/人物-README.md`
+- **frontmatter 规范**：`type: reference`、`tags: [资源/人物]`、`created`、`updated`
+- **知识库自带校验**：`node scripts/check-frontmatter.mjs`（管 type/tags/日期）
+- **skill 校验**：`python scripts/validate_archive.py`（管 11 节结构 + 写作纪律）
+- **读写方式**：Obsidian CLI（`obsidian read/create/append file=...`）或直接文件操作
+
+两套校验互补：知识库校验器管元数据合规，skill 校验器管内容结构与写作纪律。详见 `SKILL.md` 的「知识库集成」章节。
+
 ## 版本
 
 - **v0.1.0** — 首版：核心工作流、11 节模板、5 级证据分级、17 项验收清单
+- **v0.1.1** — 可移植性修复：移除平台耦合与死引用
+- **v0.2.0**（进行中）— 接入真实知识库：标杆档案入库、模板逐节注释、Obsidian 集成章节
 
 ## 许可
 
@@ -92,6 +110,6 @@ MIT. See LICENSE.
 
 ## 致谢
 
-- CGArtLab Obsidian 知识库 27 份人物档案的实践
+- CGArtLab Obsidian 知识库 30 份人物档案的实践
 - GitHub 上开源 skill 与提示词库的方法论（见 `references/external-references.md`）
-- 相关 skill：`person-profile-research`（搜索纪律）、`quill`（长文写作）、`grounded-citations`（引用规范）
+- 相关 skill：`quill`（长文写作）、`obsidian-cli`（知识库读写）
