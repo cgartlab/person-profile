@@ -47,3 +47,9 @@
 - 失误：README 目录结构列了 `benchmarks/dan-koe.md`、`benchmarks/ruanyifeng.md`、`templates/person-fragment.md`、`assets/.gitkeep`，实际都不存在 → 规则：改文档前先 `find` 核验每个被引用的路径，引用了就必须让文件真实存在
 - 失误：模板带 `## Evidence Ledger` 章节和 `living_person` / `notability` 字段，但知识库 30 份真实成稿都不用，模板跑 `validate_archive.py` 会报「非模板章节」→ 规则：模板结构必须从真实成稿提炼，不能凭空加章节或字段；模板要能通过它自己定义的校验
 - 失误：README 写「27 份档案」「26 份档案」，知识库实际 30 份档案（33 个 md 含 2 个索引+1 个报告） → 规则：文档里的计数改成现场命令或最新核验值，不写记忆中的旧数
+
+## CI 与发布
+
+- 失误：publish.yml 在 `release: published` 时调用 `cgartlab/cgartlab-skills` 的 reusable workflow，但后者是 private 仓库，GitHub 不允许 public 仓库调用 private reusable workflow，导致 7 个 skill 仓库的 publish 全部 0s 失败、jobs 为空、`referenced_workflows: []` → 规则：public 仓库的 reusable workflow 必须放在 public 仓库；private 共享 workflow 只能被 private caller 调用。排查时先看 `jobs` 是否为空 + `referenced_workflows` 是否为空，这是解析期失败的信号
+- 失误：`dry-run: ${{ inputs.dry_run || false }}` 在 release 触发下 `inputs` 上下文不存在，但这不是本次根因（真正根因是 private reusable workflow）；规则：同类报错先排除权限/可见性，再怀疑表达式
+- 失误：修知识库索引时用了 `git add <file>` 后直接 `git commit`，把用户已 staged 的其他删除一起提交 → 规则：仓库有其他未提交改动时，用 `git commit -- <path>` 只提交指定文件，或先 `git status` 确认 staged 内容

@@ -8,12 +8,17 @@ name: Publish to skill registries
 # Prerequisites (already configured as repo secrets):
 #   CLAWHUB_TOKEN, SKILLHUB_API_KEY
 #
-# Manual run: "Run workflow" republishes the default branch.
+# Manual run: "Run workflow" publishes the default branch.
 # Set dry_run=true to validate and package without contacting either registry.
+#
+# 注意：release 自动触发已暂时移除。
+# 原因：cgartlab/cgartlab-skills 是 private 仓库，GitHub 不允许 public 仓库调用
+# private 仓库的 reusable workflow，导致 7 个 skill 仓库的 publish 全部 0s 失败。
+# 待共享 workflow 迁到 public 仓库或改为内联后，再恢复下面被注释的 release 触发。
 
 on:
-  release:
-    types: [published]
+  # release:
+  #   types: [published]
   workflow_dispatch:
     inputs:
       dry_run:
