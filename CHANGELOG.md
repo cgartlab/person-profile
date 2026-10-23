@@ -7,6 +7,19 @@
 
 > `0.x` 阶段：SKILL.md 的章节结构与输出格式仍可能调整，升级前请阅读对应版本的**一句话概括**。
 
+## [0.2.2](https://github.com/cgartlab/person-profile/compare/v0.2.1...v0.2.2) - 2026-10-23
+> **一句话概括**：0.2.2 把发布逻辑内联到本仓库，不再依赖 private reusable workflow，ClawHub / SkillHub 发布恢复。**升级后 Release 会自动发布到两个 registry。**
+
+### Added
+- `.github/actions/publish/action.yml`：内联发布 action（ClawHub + SkillHub，含 SkillHub 拒绝无扩展名文件的修复）。
+- `publish.yml`：恢复 `release` 自动触发；新增 `publish_clawhub` / `publish_skillhub` 单侧补发开关。
+
+### Changed
+- 移除对 `cgartlab/cgartlab-skills` reusable workflow 的依赖（public 仓库无法调用 private workflow）。
+
+### 说明
+- 0.2.1 记的「发布暂缓」在 0.2.2 解除。
+
 ## [0.2.1](https://github.com/cgartlab/person-profile/compare/v0.2.0...v0.2.1) - 2026-10-22
 > **一句话概括**：0.2.1 是 0.2.0 之后的 CI 修补，移除 release 自动发布触发（共享 workflow 在 private 仓库，public 仓库无法调用），并记录踩坑教训。**功能与 0.2.0 相同，升级无感知。**
 

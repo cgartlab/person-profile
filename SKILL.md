@@ -1,7 +1,7 @@
 ---
 name: person-profile
 description: Use when 老板要新增人物档案、维护人物档案、统一档案格式或补齐双向链。触发词：人物档案、建档、补链、统一格式。
-version: 0.2.1
+version: 0.2.2
 author: CGArtLab
 license: MIT
 metadata:
