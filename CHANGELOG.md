@@ -7,6 +7,16 @@
 
 > `0.x` 阶段：SKILL.md 的章节结构与输出格式仍可能调整，升级前请阅读对应版本的**一句话概括**。
 
+## [0.2.1](https://github.com/cgartlab/person-profile/compare/v0.2.0...v0.2.1) - 2026-10-22
+> **一句话概括**：0.2.1 是 0.2.0 之后的 CI 修补，移除 release 自动发布触发（共享 workflow 在 private 仓库，public 仓库无法调用），并记录踩坑教训。**功能与 0.2.0 相同，升级无感知。**
+
+### Fixed
+- `publish.yml`：注释掉 `release` 自动触发，保留 `workflow_dispatch` 手动发布。原因：`cgartlab/cgartlab-skills` 是 private 仓库，GitHub 不允许 public 仓库调用 private reusable workflow，导致 publish 0s 失败。
+- `LESSONS.md`：新增「CI 与发布」章节，记录 private reusable workflow 的排查信号（jobs 为空 + `referenced_workflows: []`）与 `git commit -- <path>` 的用法。
+
+### 说明
+- 发布到 ClawHub / SkillHub 暂不可用，待共享 workflow 迁到 public 仓库或改为内联后，按 `publish.yml` 注释恢复 release 触发。
+
 ## [0.2.0](https://github.com/cgartlab/person-profile/compare/v0.1.1...v0.2.0) - 2026-10-22
 > **一句话概括**：0.2.0 让 skill 从「通用骨架」接入真实知识库——三份真实标杆档案入库、模板逐节注释、新增 Obsidian 集成章节。**升级后请读完模板注释，再按新模板落笔。**
 

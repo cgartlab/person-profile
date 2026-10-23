@@ -102,7 +102,8 @@ python scripts/check_bidirectional.py path/to/library/
 
 - **v0.1.0** — 首版：核心工作流、11 节模板、5 级证据分级、17 项验收清单
 - **v0.1.1** — 可移植性修复：移除平台耦合与死引用
-- **v0.2.0**（进行中）— 接入真实知识库：标杆档案入库、模板逐节注释、Obsidian 集成章节
+- **v0.2.0** — 接入真实知识库：标杆档案入库、模板逐节注释、Obsidian 集成章节
+- **v0.2.1** — CI 修补：移除 release 自动发布触发，记录 private reusable workflow 教训
 
 ## 许可
 
