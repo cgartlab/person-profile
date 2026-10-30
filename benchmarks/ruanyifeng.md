@@ -52,6 +52,7 @@ created: 2026-09-29
 - **Paul Graham｜译著。** 2011-04 译《黑客与画家》（人民邮电出版社）；2009 译《软件随想录》（Joel Spolsky，人民邮电出版社）。
 - **Jimmy Wales｜引用。** 2009-04 博文《Wikipedia 创始人访谈》。
 
+- **[[Lauren Tan]]｜无可核实交集（技术写作者的方法对照）。** 两位都长期做技术写作与开源分享，阮一峰以周刊做策展，Lauren Tan 以博客与开源仓库做原创。**本次在阮一峰周刊仓库与站点按关键词检索（poteto、Lauren Tan、React Compiler）未命中任何提及**，故不作交集断言。
 > 本节由独立核查生成，事实与否定结论均附出处。若日后出现新证据，请同步更新对方档案，以保持双向对称。
 
 ## 时间线与主要作品/言论
@@ -251,44 +252,44 @@ flowchart LR
 
 ## 主要参考来源
 
-- 阮一峰的网络日志 首页（https://www.ruanyifeng.com/blog）（2026-09-29 获取，可信度：机构自述；博客页脚 2252 篇 / 79410 留言，周刊最新 413 期）
-- 阮一峰的网络日志 About Me 页（https://www.ruanyifeng.com/about.html）（2026-09-29 获取，可信度：机构自述；2015-11-26 版，未更新；含"70 后"、出版列表、支付宝工程师身份）
-- 阮一峰的网络日志 图灵访谈（https://www.ruanyifeng.com/blog/2015/02/turing-interview.html）（2026-09-29 获取，可信度：机构自述；含"70 后、上海出生长大、经济学本科、世界经济研究生、上海本地高校教师、支付宝 JavaScript/Node 工程师、2003-12 开始博客"等原文）
-- 阮一峰的网络日志 图灵教育版本（https://www.ituring.com.cn/article/111023）（2026-09-29 获取，可信度：机构自述；图灵网站访谈版）
-- 阮一峰的网络日志 早期首页快照（https://web.archive.org/web/20060407054306/http://www.ruanyifeng.com/blog/）（2026-09-29 获取，可信度：可靠事实；Wayback 最早可访问快照，2006-04-07）
-- 《为什么要写 Blog？》（https://www.ruanyifeng.com/blog/2006/12/why_i_keep_blogging.html）（2026-09-29 获取，可信度：机构自述；"到今年 12 月为止，我写 Blog 已经满 3 年了"）
-- 《2007 年我的 Blog 总结》（https://www.ruanyifeng.com/blog/2007/12/2007_my_blogging_summary.html）（2026-09-29 获取，可信度：机构自述；350 篇一年一篇）
-- 《黑客与画家》豆瓣条目（https://book.douban.com/works/1042159）（2026-09-29 获取，可信度：可靠事实；译《软件随想录》2009 人民邮电出版社）
-- 《黑客与画家》百度百科条目（https://baike.baidu.com/item/黑客与画家/277142）（2026-09-29 获取，可信度：可靠事实；2011-04 出版）
-- 《Google 关闭了我的 Adsense 账户》（https://www.ruanyifeng.com/blog/2011/05/my_google_adsense_is_disabled.html）（2026-09-29 获取，可信度：机构自述；AdSense 账户被关停事件）
-- 《小额支付试验的结果》（https://www.ruanyifeng.com/blog/2012/07/micropayment_result.html）（2026-09-29 获取，可信度：机构自述；88 篇、1079 笔、5800 元、3.3%）
-- 《ECMAScript 6 入门》上线公告（https://www.ruanyifeng.com/blog/2014/04/ecmascript_6_primer.html）（2026-09-29 获取，可信度：机构自述；2014-04-30 上线 es6.ruanyifeng.com）
-- 《ES6 标准入门（第 3 版）》上市公告（https://www.ruanyifeng.com/blog/2017/09/es6_primer_3rd_edition.html）（2026-09-29 获取，可信度：机构自述；电子工业出版社 547 页，"官网每天上万次页面请求"）
-- 《SSL/TLS 协议运行机制的概述》（https://www.ruanyifeng.com/blog/2014/02/ssl_tls.html）（2026-09-29 获取，可信度：机构自述；网络协议教程代表作）
-- 《HTTP 协议入门》（https://www.ruanyifeng.com/blog/2016/08/http.html）（2026-09-29 获取，可信度：机构自述）
-- 《区块链入门教程》（https://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html）（2026-09-29 获取，可信度：机构自述）
-- 《比特币入门教程》（https://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html）（2026-09-29 获取，可信度：机构自述）
-- 《乔布斯的告别》（https://www.ruanyifeng.com/blog/2011/10/steve_jobs_farewell.html）（2026-09-29 获取，可信度：机构自述；2011-10-08 纪念乔布斯）
-- 《乔布斯的管理课》（https://www.ruanyifeng.com/blog/2014/10/real-leadership-lessons-of-steve-jobs.html）（2026-09-29 获取，可信度：机构自述）
-- 《要聊天，先付费》（https://www.ruanyifeng.com/blog/2016/05/group-chat.html）（2026-09-29 获取，可信度：机构自述；引用李笑来 2555 元知识社群作为付费聊天案例）
-- 《DDOS 攻击的防范教程》（https://www.ruanyifeng.com/blog/2018/06/ddos.html）（2026-09-29 获取，可信度：机构自述；2018-05 DDoS 事件与防御方案）
-- GitHub 仓库 ruanyf/weekly（https://github.com/ruanyf/weekly）（2026-09-29 获取，可信度：可靠事实；105k stars、4.5k forks、887 commits、5k+ issues、413 期）
-- GitHub 仓库 ruanyf/weekly 第 1 期 raw markdown（https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-1.md）（2026-09-29 获取，可信度：机构自述；2018-04-23 世界读书日发布）
-- GitHub 仓库 ruanyf/weekly 第 100 期 raw markdown（https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-100.md）（2026-09-29 获取，可信度：机构自述；2020-03-22）
-- 阮一峰的网络日志 第 200 期《低期望，多尝试》（https://www.ruanyifeng.com/blog/2022/03/weekly-issue-200.html）（2026-09-29 获取，可信度：机构自述；引用芒格"低期望"）
-- 阮一峰的网络日志 第 238 期（FlowUs 赞助）（https://www.ruanyifeng.com/blog/2023/01/weekly-issue-238.html）（2026-09-29 获取，可信度：机构自述）
-- 阮一峰的网络日志 第 242 期《一次尴尬的服务器被黑》（https://www.ruanyifeng.com/blog/2023/02/weekly-issue-242.html）（2026-09-29 获取，可信度：机构自述）
-- 阮一峰的网络日志 第 300 期《三十年，解决人生三大问题》（https://www.ruanyifeng.com/blog/2024/05/weekly-issue-300.html）（2026-09-29 获取，可信度：机构自述；2024-05-17）
-- 阮一峰的网络日志 第 365 期《流量变现正在崩塌》（https://www.ruanyifeng.com/blog/2025/09/weekly-issue-365.html）（2026-09-29 获取，可信度：机构自述；2025-09-12）
-- 阮一峰的网络日志 第 400 期《rsync 的争论》（https://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html）（2026-09-29 获取，可信度：机构自述；2026-06-12）
-- 阮一峰的网络日志 第 413 期《再见了，React Native》（https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html）（2026-09-29 获取，可信度：机构自述；2026-09-18）
-- 阮一峰的网络日志 第 167 期《广告拦截器太过分了》（https://www.ruanyifeng.com/blog/2021/07/weekly-issue-167.html）（2026-09-29 获取，可信度：机构自述）
-- 阮一峰的网络日志 第 264 期（知识星球读者留言区）（https://www.ruanyifeng.com/blog/2023/07/weekly-issue-264.html）（2026-09-29 获取，可信度：机构自述；读者 xuhs 留言，非阮一峰本人立场）
-- 阮一峰的网络日志 第 65 期《谁在招人》栏目开设（https://www.ruanyifeng.com/blog/2019/07/weekly-issue-65.html）（2026-09-29 获取，可信度：机构自述）
-- 阮一峰的网络日志 第 132 期极客时间合作（https://www.ruanyifeng.com/blog/2020/11/weekly-issue-132.html）（2026-09-29 获取，可信度：机构自述）
-- GitHub 用户 ruanyf 主页（https://github.com/ruanyf）（2026-09-29 获取，可信度：可靠事实）
-- gitranks.com 阮一峰 GitHub 排名（https://gitranks.com/profile/ruanyf）（2026-09-29 获取，可信度：旁人回忆；87,245 followers 抓取）
-- checkmygit.com 阮一峰 GitHub 数据（https://checkmygit.com/ruanyf）（2026-09-29 获取，可信度：旁人回忆；87,590 followers 抓取）
-- Twitter/X @ruanyf 主页（https://x.com/ruanyf）（2026-09-29 获取，可信度：可靠事实；207.9k followers、Joined March 2007）
-- 修补匠博客《读阮一峰周刊有感，谢谢你让我看见世界》（https://tinkerdeng.github.io/ruanyifeng/ruanyifeng.html）（2026-09-29 获取，可信度：旁人回忆；读者侧写，"GitHub Users Global Ranking 全球第二"）
-- 阮一峰的博客 归档页（https://www.ruanyifeng.com/blog/archives.html）（2026-09-29 获取，可信度：机构自述；2252 篇文章索引）
+- 阮一峰的网络日志 首页（2026-09-29 获取，可信度：机构自述；博客页脚 2252 篇 / 79410 留言，周刊最新 413 期）｜[原文](https://www.ruanyifeng.com/blog)
+- 阮一峰的网络日志 About Me 页（2026-09-29 获取，可信度：机构自述；2015-11-26 版，未更新；含"70 后"、出版列表、支付宝工程师身份）｜[原文](https://www.ruanyifeng.com/about.html)
+- 阮一峰的网络日志 图灵访谈（2026-09-29 获取，可信度：机构自述；含"70 后、上海出生长大、经济学本科、世界经济研究生、上海本地高校教师、支付宝 JavaScript/Node 工程师、2003-12 开始博客"等原文）｜[原文](https://www.ruanyifeng.com/blog/2015/02/turing-interview.html)
+- 阮一峰的网络日志 图灵教育版本（2026-09-29 获取，可信度：机构自述；图灵网站访谈版）｜[原文](https://www.ituring.com.cn/article/111023)
+- 阮一峰的网络日志 早期首页快照（2026-09-29 获取，可信度：可靠事实；Wayback 最早可访问快照，2006-04-07）｜[原文](https://web.archive.org/web/20060407054306/http://www.ruanyifeng.com/blog/)
+- 《为什么要写 Blog？》（2026-09-29 获取，可信度：机构自述；"到今年 12 月为止，我写 Blog 已经满 3 年了"）｜[原文](https://www.ruanyifeng.com/blog/2006/12/why_i_keep_blogging.html)
+- 《2007 年我的 Blog 总结》（2026-09-29 获取，可信度：机构自述；350 篇一年一篇）｜[原文](https://www.ruanyifeng.com/blog/2007/12/2007_my_blogging_summary.html)
+- 《黑客与画家》豆瓣条目（2026-09-29 获取，可信度：可靠事实；译《软件随想录》2009 人民邮电出版社）｜[原文](https://book.douban.com/works/1042159)
+- 《黑客与画家》百度百科条目（2026-09-29 获取，可信度：可靠事实；2011-04 出版）｜[原文](https://baike.baidu.com/item/黑客与画家/277142)
+- 《Google 关闭了我的 Adsense 账户》（2026-09-29 获取，可信度：机构自述；AdSense 账户被关停事件）｜[原文](https://www.ruanyifeng.com/blog/2011/05/my_google_adsense_is_disabled.html)
+- 《小额支付试验的结果》（2026-09-29 获取，可信度：机构自述；88 篇、1079 笔、5800 元、3.3%）｜[原文](https://www.ruanyifeng.com/blog/2012/07/micropayment_result.html)
+- 《ECMAScript 6 入门》上线公告（2026-09-29 获取，可信度：机构自述；2014-04-30 上线 es6.ruanyifeng.com）｜[原文](https://www.ruanyifeng.com/blog/2014/04/ecmascript_6_primer.html)
+- 《ES6 标准入门（第 3 版）》上市公告（2026-09-29 获取，可信度：机构自述；电子工业出版社 547 页，"官网每天上万次页面请求"）｜[原文](https://www.ruanyifeng.com/blog/2017/09/es6_primer_3rd_edition.html)
+- 《SSL/TLS 协议运行机制的概述》（2026-09-29 获取，可信度：机构自述；网络协议教程代表作）｜[原文](https://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
+- 《HTTP 协议入门》（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2016/08/http.html)
+- 《区块链入门教程》（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html)
+- 《比特币入门教程》（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html)
+- 《乔布斯的告别》（2026-09-29 获取，可信度：机构自述；2011-10-08 纪念乔布斯）｜[原文](https://www.ruanyifeng.com/blog/2011/10/steve_jobs_farewell.html)
+- 《乔布斯的管理课》（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2014/10/real-leadership-lessons-of-steve-jobs.html)
+- 《要聊天，先付费》（2026-09-29 获取，可信度：机构自述；引用李笑来 2555 元知识社群作为付费聊天案例）｜[原文](https://www.ruanyifeng.com/blog/2016/05/group-chat.html)
+- 《DDOS 攻击的防范教程》（2026-09-29 获取，可信度：机构自述；2018-05 DDoS 事件与防御方案）｜[原文](https://www.ruanyifeng.com/blog/2018/06/ddos.html)
+- GitHub 仓库 ruanyf/weekly（2026-09-29 获取，可信度：可靠事实；105k stars、4.5k forks、887 commits、5k+ issues、413 期）｜[原文](https://github.com/ruanyf/weekly)
+- GitHub 仓库 ruanyf/weekly 第 1 期 raw markdown（2026-09-29 获取，可信度：机构自述；2018-04-23 世界读书日发布）｜[原文](https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-1.md)
+- GitHub 仓库 ruanyf/weekly 第 100 期 raw markdown（2026-09-29 获取，可信度：机构自述；2020-03-22）｜[原文](https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-100.md)
+- 阮一峰的网络日志 第 200 期《低期望，多尝试》（2026-09-29 获取，可信度：机构自述；引用芒格"低期望"）｜[原文](https://www.ruanyifeng.com/blog/2022/03/weekly-issue-200.html)
+- 阮一峰的网络日志 第 238 期（FlowUs 赞助）（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2023/01/weekly-issue-238.html)
+- 阮一峰的网络日志 第 242 期《一次尴尬的服务器被黑》（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2023/02/weekly-issue-242.html)
+- 阮一峰的网络日志 第 300 期《三十年，解决人生三大问题》（2026-09-29 获取，可信度：机构自述；2024-05-17）｜[原文](https://www.ruanyifeng.com/blog/2024/05/weekly-issue-300.html)
+- 阮一峰的网络日志 第 365 期《流量变现正在崩塌》（2026-09-29 获取，可信度：机构自述；2025-09-12）｜[原文](https://www.ruanyifeng.com/blog/2025/09/weekly-issue-365.html)
+- 阮一峰的网络日志 第 400 期《rsync 的争论》（2026-09-29 获取，可信度：机构自述；2026-06-12）｜[原文](https://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html)
+- 阮一峰的网络日志 第 413 期《再见了，React Native》（2026-09-29 获取，可信度：机构自述；2026-09-18）｜[原文](https://www.ruanyifeng.com/blog/2026/09/weekly-issue-413.html)
+- 阮一峰的网络日志 第 167 期《广告拦截器太过分了》（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2021/07/weekly-issue-167.html)
+- 阮一峰的网络日志 第 264 期（知识星球读者留言区）（2026-09-29 获取，可信度：机构自述；读者 xuhs 留言，非阮一峰本人立场）｜[原文](https://www.ruanyifeng.com/blog/2023/07/weekly-issue-264.html)
+- 阮一峰的网络日志 第 65 期《谁在招人》栏目开设（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2019/07/weekly-issue-65.html)
+- 阮一峰的网络日志 第 132 期极客时间合作（2026-09-29 获取，可信度：机构自述）｜[原文](https://www.ruanyifeng.com/blog/2020/11/weekly-issue-132.html)
+- GitHub 用户 ruanyf 主页（2026-09-29 获取，可信度：可靠事实）｜[原文](https://github.com/ruanyf)
+- gitranks.com 阮一峰 GitHub 排名（2026-09-29 获取，可信度：旁人回忆；87,245 followers 抓取）｜[原文](https://gitranks.com/profile/ruanyf)
+- checkmygit.com 阮一峰 GitHub 数据（2026-09-29 获取，可信度：旁人回忆；87,590 followers 抓取）｜[原文](https://checkmygit.com/ruanyf)
+- Twitter/X @ruanyf 主页（2026-09-29 获取，可信度：可靠事实；207.9k followers、Joined March 2007）｜[原文](https://x.com/ruanyf)
+- 修补匠博客《读阮一峰周刊有感，谢谢你让我看见世界》（2026-09-29 获取，可信度：旁人回忆；读者侧写，"GitHub Users Global Ranking 全球第二"）｜[原文](https://tinkerdeng.github.io/ruanyifeng/ruanyifeng.html)
+- 阮一峰的博客 归档页（2026-09-29 获取，可信度：机构自述；2252 篇文章索引）｜[原文](https://www.ruanyifeng.com/blog/archives.html)

@@ -50,11 +50,12 @@ person-profile/
 │   ├── validate_library.py     # 批量校验整个档案库
 │   ├── check_bidirectional.py  # 双向链完整性检查
 │   ├── check_prohibitions.py   # 禁词与格式违规扫描
+│   ├── check_sources.py        # 参考来源格式校验（内联链接、无裸 URL）
 │   └── migrate_heading_level.py # 标题级别批量迁移
 │
 ├── benchmarks/           # 高质量标杆档案样本（取自真实知识库）
 │   ├── dan-koe.md            # 英文创作者经济标杆（278 行）
-│   ├── ruanyifeng.md         # 中文技术博客标杆（294 行）
+│   ├── ruanyifeng.md         # 中文技术博客标杆（295 行）
 │   ├── esor-huang.md         # 中文独立作者标杆（289 行）
 │   └── benchmark-rubric.md   # 评分标准
 │
@@ -105,6 +106,7 @@ python scripts/check_bidirectional.py path/to/library/
 - **v0.2.0** — 接入真实知识库：标杆档案入库、模板逐节注释、Obsidian 集成章节
 - **v0.2.1** — CI 修补：移除 release 自动发布触发，记录 private reusable workflow 教训
 - **v0.2.2** — 发布逻辑内联到本仓库 action，ClawHub / SkillHub 发布恢复
+- **v0.2.3** — 统一「主要参考来源」格式，新增 check_sources.py 机械校验（修复 #10）
 
 ## 许可
 

@@ -258,21 +258,21 @@ flowchart LR
 
 ## 主要参考来源
 
-- The Art of Focus (Goodreads 书目页)（https://www.goodreads.com/en/book/show/204169121-the-art-of-focus）（2026-09-27 获取，可信度，可靠）
-- Dan Koe 官网首页与 About 页（https://thedankoe.com）（2026-09-27 获取，可信度，机构自述）
-- My Story: The Untold Truth Of Dan Koe（https://thedankoe.com/letters/my-story-the-untold-truth-of-dan-koe）（2026-09-27 获取，可信度，机构自述，作者自述长文）
-- How My Startup Made $759,900 In 6 Months (Without Launching)（https://thedankoe.com/letters/how-my-startup-made-759900-in-6-months-without-launching）（2026-09-27 获取，可信度，机构自述，作者一手财务披露）
-- A Complete Knowledge Base Of HUMAN 3.0（https://thedankoe.com/letters/a-complete-knowledge-base-of-human-3-0）（2026-09-27 获取，可信度，机构自述加方法论合成）
-- You don't need a niche, you need a point of view（https://thedankoe.com/letters/you-dont-need-a-niche-you-need-a-point-of-view）（2026-09-27 获取，可信度，机构自述）
-- Kortex: The $3 Million Dollar Mistake (YouTube podcast)（https://www.youtube.com/watch?v=vbrTv-4PsdA）（2026-09-27 获取，可信度，可靠加机构自述，Dan 与联创 Matt/Ari 一手口述，68,512 views）
-- Kortex To Eden: Everything You Need To Know（Kortex 官方博客）（https://www.kortex.co/blog/kortex-to-eden-everything-you-need-to-know）（2026-09-27 获取，可信度，机构自述，官方公告）
-- My Honest Review On Eden, Dan Koe's New App (Noah Vincent, Substack)（https://noahvnct.substack.com/p/my-honest-review-on-eden-dan-koes）（2026-09-27 获取，可信度，旁人回忆，第三方独立评测）
-- I Tried Eden, Dan Koe's New App... It's Insane (Noah Vincent, Substack)（https://noahvnct.substack.com/p/i-tried-eden-dan-koes-new-app-its）（2026-09-27 获取，可信度，旁人回忆，第三方独立评测，2026-09-06）
-- This Unreleased Book on "The Art of Focus" Felt Life-Changing (Tim Denning)（https://timdenning.com/the-art-of-focus-book）（2026-09-27 获取，可信度，旁人回忆，同赛道作者书评）
-- A Day In The Life Of Dan Koe (YouTube)（https://www.youtube.com/watch?v=9Gwp-bqzxwQ）（2026-09-27 获取，可信度，可靠，频道订阅数一手数据）
-- Dan Koe LinkedIn 主页（https://www.linkedin.com/in/thedankoe）（2026-09-27 获取，可信度，机构自述，Scottsdale 位置加 179,484 followers。**注意：LinkedIn 对部分地区（含中国大陆）返回 HTTP 451，需在可访问的网络环境下核对**）
-- Thoughts about Dan Koe (Daniel Koenigslieb) (Reddit r/productivity)（https://www.reddit.com/r/productivity/comments/1cbibae/thoughts_about_dan_koe_daniel_koenigslieb）（2026-09-27 获取，可信度，旁人回忆，用户讨论）
-- Review of The Art of Focus by Dan Koe (Author Cygnet Brown)（https://authorcygnetbrown.com/2024/07/22/review-of-the-art-of-focus-by-dan-koe）（2026-09-27 获取，可信度，旁人回忆，独立书评）
-- Who Is Dan Koe & Why Is He So Damn Inspiring? (Derya Sefer, Medium)（https://medium.com/@deryaseferblog/why-is-dan-koe-so-damn-inspiring-236bf65364dd）（2026-09-27 获取，可信度，旁人回忆，第三方长文）
-- Kortex - Tracxn Company Profile（tracxn.com/d/companies/kortex，2026-09-27 获取，可信度，可靠，第三方企业数据库，Kortex 未融资记录；**该页面 2026-10 已下线，Tracxn 侧记录（CIN: 32082009138，成立于 2021-11-22，状态 Active）已摘录在「主要参考来源」节，官方站现址 https://kortex.co/）
-- Dan Koe Personal Brand Cult Marketing (Status Elevated, YouTube)（https://www.youtube.com/watch?v=x5I7AeVZOV8）（2026-09-27 获取，可信度，不可靠，仅记录攻击存在，不采纳结论）
+- The Art of Focus (Goodreads 书目页)（2026-09-27 获取，可信度，可靠）｜[原文](https://www.goodreads.com/en/book/show/204169121-the-art-of-focus)
+- Dan Koe 官网首页与 About 页（2026-09-27 获取，可信度，机构自述）｜[原文](https://thedankoe.com)
+- My Story: The Untold Truth Of Dan Koe（2026-09-27 获取，可信度，机构自述，作者自述长文）｜[原文](https://thedankoe.com/letters/my-story-the-untold-truth-of-dan-koe)
+- How My Startup Made $759,900 In 6 Months (Without Launching)（2026-09-27 获取，可信度，机构自述，作者一手财务披露）｜[原文](https://thedankoe.com/letters/how-my-startup-made-759900-in-6-months-without-launching)
+- A Complete Knowledge Base Of HUMAN 3.0（2026-09-27 获取，可信度，机构自述加方法论合成）｜[原文](https://thedankoe.com/letters/a-complete-knowledge-base-of-human-3-0)
+- You don't need a niche, you need a point of view（2026-09-27 获取，可信度，机构自述）｜[原文](https://thedankoe.com/letters/you-dont-need-a-niche-you-need-a-point-of-view)
+- Kortex: The $3 Million Dollar Mistake (YouTube podcast)（2026-09-27 获取，可信度，可靠加机构自述，Dan 与联创 Matt/Ari 一手口述，68,512 views）｜[原文](https://www.youtube.com/watch?v=vbrTv-4PsdA)
+- Kortex To Eden: Everything You Need To Know（Kortex 官方博客）（2026-09-27 获取，可信度，机构自述，官方公告）｜[原文](https://www.kortex.co/blog/kortex-to-eden-everything-you-need-to-know)
+- My Honest Review On Eden, Dan Koe's New App (Noah Vincent, Substack)（2026-09-27 获取，可信度，旁人回忆，第三方独立评测）｜[原文](https://noahvnct.substack.com/p/my-honest-review-on-eden-dan-koes)
+- I Tried Eden, Dan Koe's New App... It's Insane (Noah Vincent, Substack)（2026-09-27 获取，可信度，旁人回忆，第三方独立评测，2026-09-06）｜[原文](https://noahvnct.substack.com/p/i-tried-eden-dan-koes-new-app-its)
+- This Unreleased Book on "The Art of Focus" Felt Life-Changing (Tim Denning)（2026-09-27 获取，可信度，旁人回忆，同赛道作者书评）｜[原文](https://timdenning.com/the-art-of-focus-book)
+- A Day In The Life Of Dan Koe (YouTube)（2026-09-27 获取，可信度，可靠，频道订阅数一手数据）｜[原文](https://www.youtube.com/watch?v=9Gwp-bqzxwQ)
+- Dan Koe LinkedIn 主页（2026-09-27 获取，可信度，机构自述，Scottsdale 位置加 179,484 followers。**注意：LinkedIn 对部分地区（含中国大陆）返回 HTTP 451，需在可访问的网络环境下核对**）｜[原文](https://www.linkedin.com/in/thedankoe)
+- Thoughts about Dan Koe (Daniel Koenigslieb) (Reddit r/productivity)（2026-09-27 获取，可信度，旁人回忆，用户讨论）｜[原文](https://www.reddit.com/r/productivity/comments/1cbibae/thoughts_about_dan_koe_daniel_koenigslieb)
+- Review of The Art of Focus by Dan Koe (Author Cygnet Brown)（2026-09-27 获取，可信度，旁人回忆，独立书评）｜[原文](https://authorcygnetbrown.com/2024/07/22/review-of-the-art-of-focus-by-dan-koe)
+- Who Is Dan Koe & Why Is He So Damn Inspiring? (Derya Sefer, Medium)（2026-09-27 获取，可信度，旁人回忆，第三方长文）｜[原文](https://medium.com/@deryaseferblog/why-is-dan-koe-so-damn-inspiring-236bf65364dd)
+- Kortex - Tracxn Company Profile（tracxn.com/d/companies/kortex，2026-09-27 获取，可信度，可靠，第三方企业数据库，Kortex 未融资记录；**该页面 2026-10 已下线，Tracxn 侧记录（CIN: 32082009138，成立于 2021-11-22，状态 Active）已摘录在「主要参考来源」节，官方站现址）｜[原文](https://kortex.co/)
+- Dan Koe Personal Brand Cult Marketing (Status Elevated, YouTube)（2026-09-27 获取，可信度，不可靠，仅记录攻击存在，不采纳结论）｜[原文](https://www.youtube.com/watch?v=x5I7AeVZOV8)

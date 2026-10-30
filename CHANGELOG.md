@@ -7,6 +7,22 @@
 
 > `0.x` 阶段：SKILL.md 的章节结构与输出格式仍可能调整，升级前请阅读对应版本的**一句话概括**。
 
+## [0.2.3](https://github.com/cgartlab/person-profile/compare/v0.2.2...v0.2.3) - 2026-10-30
+> **一句话概括**：0.2.3 统一「主要参考来源」格式，全库只此一种写法，并新增 `check_sources.py` 机械校验。**修复 #10。**
+
+### Added
+- `scripts/check_sources.py`：参考来源段机械校验（行尾内联链接、无裸 URL、链接文本限 原文/快照/补充、无地址条目须注明原因、说明非空）。
+- `tests/fixtures/sources-invalid/`：裸 URL 反例 fixture；CI 增加 check_sources 正例/反例两步。
+- 硬规矩新增第 16 条：参考来源格式。
+
+### Changed
+- `templates/person-archive.md` 第 11 节：格式改为唯一写法 `- 说明（日期，可信度）｜[原文](url)`，补 6 条细则。
+- `SKILL.md`：11 节结构说明、硬规矩（15→16）、验收清单、[6] 校验项同步。
+- `benchmarks/`：3 份标杆从知识库重新拷贝（知识库已在 2026-10-30 统一格式）。
+
+### 说明
+- 无地址条目明确允许，但必须注明原因（需登录 / 403 / 快照缺失），不得编造地址。
+
 ## [0.2.2](https://github.com/cgartlab/person-profile/compare/v0.2.1...v0.2.2) - 2026-10-23
 > **一句话概括**：0.2.2 把发布逻辑内联到本仓库，不再依赖 private reusable workflow，ClawHub / SkillHub 发布恢复。**升级后 Release 会自动发布到两个 registry。**
 

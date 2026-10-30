@@ -32,6 +32,9 @@ jobs:
       - name: 正例 — 无禁词应通过
         run: python scripts/check_prohibitions.py tests/fixtures/valid-library/
 
+      - name: 正例 — 参考来源格式应通过
+        run: python scripts/check_sources.py tests/fixtures/valid-library/
+
       - name: 反例 — 缺章节应被检出（退出码 1）
         run: |
           if python scripts/validate_library.py tests/fixtures/missing-section/; then
@@ -47,3 +50,11 @@ jobs:
             exit 1
           fi
           echo "✓ 单向链被正确检出"
+
+      - name: 反例 — 裸 URL 应被检出（退出码 1）
+        run: |
+          if python scripts/check_sources.py tests/fixtures/sources-invalid/; then
+            echo "::error::裸 URL 未被检出，check_sources 可能失效"
+            exit 1
+          fi
+          echo "✓ 裸 URL 被正确检出"

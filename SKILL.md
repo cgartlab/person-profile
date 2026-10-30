@@ -1,7 +1,7 @@
 ---
 name: person-profile
 description: Use when 老板要新增人物档案、维护人物档案、统一档案格式或补齐双向链。触发词：人物档案、建档、补链、统一格式。
-version: 0.2.2
+version: 0.2.3
 author: CGArtLab
 license: MIT
 metadata:
@@ -126,11 +126,11 @@ metadata:
 8. 争议与风险点
 9. 可信度与信息差异
 10. 可操作建议
-11. 主要参考来源
+11. 主要参考来源（格式唯一：`- 说明（日期，可信度）｜[原文](url)`，见硬规矩 16）
 
 **章节标题必须 `##` 级别**，不能用 `#` 或 `###`。
 
-**15 条硬规矩**（写作时逐条对，详见 `references/writing-style.md`）：
+**16 条硬规矩**（写作时逐条对，详见 `references/writing-style.md`）：
 
 结构类：
 1. 一级章节固定 11 个，名称与顺序不可增删改
@@ -154,6 +154,9 @@ metadata:
 13. 核心价值观至少 1 条具体、可被反驳的判断
 14. 判断写完做反例审查；反例**只能取自档案已有材料**
 15. 关系可查 ≠ 影响双向；单向影响如实标注
+
+参考来源格式：
+16. 一行一条、无序列表 `- `，链接固定在行尾 `｜[原文](url)`，不用裸 URL、不用数字编号；无地址条目照写说明并注明原因（需登录 / 403 / 快照缺失），不编造地址
 
 **长度参考**：
 - **质量底线**：≥ 300 行（不含 frontmatter）
@@ -204,6 +207,7 @@ python scripts/validate_library.py <library-root>
 - frontmatter 是否有 `author: ChatGPT` 残留
 - 是否有非模板章节
 - 是否有禁词与破折号
+- 参考来源是否全为行尾内联链接、无裸 URL（`scripts/check_sources.py`）
 
 **批量修改规则**：
 1. 先 dry-run 报告所有偏差
@@ -247,7 +251,7 @@ docs(人物): 新增 XXX 档案 + 统一标题级别为 ## + 补关系网络双�
 - [ ] 争议与风险点写清各方立场，不替一方下判断
 - [ ] 可信度章节含 5 级分级 + 待核实清单 + 引用标准
 - [ ] 可操作建议 ≥ 5 条，动词开头
-- [ ] 主要参考来源 ≥ 10 条，附实际访问到的 URL
+- [ ] 主要参考来源 ≥ 10 条；全部为行尾内联链接、无裸 URL；无地址条目写明原因
 - [ ] frontmatter 无 `author: ChatGPT`
 - [ ] frontmatter 含 `type: reference`、`tags: [资源/人物]`、`created`、`updated`（知识库规范）
 - [ ] 知识库 `check-frontmatter.mjs` 与本 skill `validate_archive.py` 双校验通过

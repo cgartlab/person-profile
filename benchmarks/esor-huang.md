@@ -236,54 +236,54 @@ Esor Huang（笔名誉尘行者）是台湾独立知识工作者，2006 年 11 �
 
 ## 主要参考来源
 
-1. https://www.playpcesor.com（Esor 博客，20 年 2000+ 篇）
-2. https://www.playpcesor.com/2026/05/ai-agent.html（2026-05 AI Agent 前置过滤代表文，一手自述）
-3. https://www.playpcesor.com/2026/07/ai-ai.html（2026-07 五层第二大脑架构，一手自述）
-4. https://www.playpcesor.com/2026/06/chatgpt-ai-ai.html（2026-06 PARAL AI 团队分类法，一手自述）
-5. https://www.playpcesor.com/2026/03/ai-chatgptcodexopenclaw.html（2026-03 多 AI 分工与规则系统，一手自述）
-6. https://www.playpcesor.com/2026/05/codex-ai.html（2026-05 Codex 超完整图文教学，一手自述）
-7. https://www.playpcesor.com/2025/07/3-ai.html（2025-07 任务化连结方法论，一手自述）
-8. https://www.playpcesor.com/2025/06/ai-chatgpt.html（2025-06 ChatGPT 专案第二大脑六步骤，一手自述）
-9. https://www.playpcesor.com/2025/06/ai.html（2025-06 任务/经验 vs 资料/知识，一手自述）
-10. https://www.playpcesor.com/2025/05/notebooklm-ai.html（2025-05 NotebookLM 稍后阅读工作流，一手自述）
-11. https://www.playpcesor.com/2025/04/chatgpt-ai-9.html（2025-04 ChatGPT 记忆作为 AI 数据库，一手自述）
-12. https://www.playpcesor.com/2024/08/chatgpt-para-ai.html（2024-08 ChatGPT PARA 分类法，一手自述）
-13. https://www.playpcesor.com/2024/12/chatgpt-ai-notebooklm.html（2024-12 ChatGPT 专案 vs NotebookLM，一手自述）
-14. https://www.playpcesor.com/2015/06/evernote-onenote-brain.html（2015-06 第二大脑概念系统化，一手自述）
-15. https://www.playpcesor.com/2012/04/evernote-10.html（2012-04 Evernote 10 个必备观念，一手自述）
-16. https://www.playpcesor.com/p/blog-post_21.html（博客作者页，机构自述）
-17. https://www.blogger.com/profile/10426807330996372963（Blogger 个人资料页，机构自述）
-18. https://yanguo.com.tw/teacher/esor（言果学习讲师页，机构自述）
-19. https://ycctraining.com/lecturer1?id=8（振邦顾问讲师页，机构自述）
-20. https://cite.com.tw/author/view/id/10（城邦学院讲师页，机构自述）
-21. https://www.darencademy.com/author/view/id/10（大人学讲师页，机构自述）
-22. https://www.projectup.net/author/view/id/7（ProjectUp 讲师页，机构自述）
-23. https://www.tibame.com/teacher/8a0f10ae（纬育 TibaMe 讲师页，机构自述）
-24. https://www.silkbook.com/book_detail.asp?goods_ser=kk0354541（博客来《Evernote 100 个好方法》初版，可靠事实）
-25. https://www.books.com.tw/products/0010646035（博客来《Evernote 超效率数字笔记术》，可靠事实）
-26. https://www.books.com.tw/products/0010642730（博客来《这些 Google 帮我做好的事》，可靠事实）
-27. https://www.books.com.tw/products/E050012510（博客来《打开大家的 Evernote 笔记本》，可靠事实）
-28. https://www.books.com.tw/products/0010724090（博客来《Evernote 100 个好方法》全新增订版，可靠事实）
-29. https://www.books.com.tw/products/0010751099（博客来《比别人快一步的 Google 工作术》，可靠事实）
-30. https://www.books.com.tw/products/0010775489（博客来《电脑玩物站长的笔记思考术》，可靠事实）
-31. https://www.books.com.tw/products/0010815339（博客来《大脑减压的子弹笔记术》，可靠事实）
-32. https://www.books.com.tw/products/E050068502（博客来《时间管理的 30 道难题》，可靠事实）
-33. https://www.books.com.tw/products/0010929730（博客来《防弹笔记法》，可靠事实）
-33. https://www.books.com.tw/products/0011037672（博客来《高效职场生存法图解》2026-01，可靠事实）
-34. https://book.douban.com/author/724918/books?sortby=time&format=pic（豆瓣作者页，可靠事实）
-35. https://baike.baidu.com/item/大脑减压的子弹笔记法/55499943（百度百科简体版条目，可靠事实）
-36. https://www.tibame.com/course/4115（2023-05 天狗学院直播课，机构自述）
-37. https://www.tibame.com/course/4468（2023-08 天狗学院直播课，机构自述）
-38. https://www.cite.tw/courses/485（城邦学院《个人数字生产力》电子课，机构自述）
-39. https://www.pressplay.cc/link/EEED4701（PressPlay《子弹时间管理术》课，机构自述）
-40. https://www.youtube.com/c/esorhuang（YouTube 官方频道 @esorhuang，机构自述）
-41. https://x.com/esorhjy（X 账号 @esorhjy，一手自述）
-42. https://www.linkedin.com/in/esor-huang-2b300897（LinkedIn，机构自述。**注意：LinkedIn 对部分地区（含中国大陆）返回 HTTP 451，需在可访问的网络环境下核对**）
-43. https://www.openbook.org.tw/article/p-1048（读库专访，第三方转载）
-44. https://www.cheers.com.tw/article/article.action?id=5103136（Cheers 专访，第三方转载）
-45. https://www.managertoday.com.tw/articles/view/66988（经理人专访，第三方转载）
-46. https://sat.cool/course/191（2026 sat.cool 工作流改造术合作课，机构自述）
-47. https://www.ifanr.com/app/642210（爱范儿「以终为始的子弹笔记」专访，第三方转载）
-48. https://readingoutpost.com/time-mgt-30（Podcast 下一本读什么 EP.305，第三方转载）
-49. https://blog.104.com.tw/how-to-prompt-chatgpt-to-write-like-you（104 职涯家 Blog ChatGPT prompt 教学，第三方转载）
-50. https://www.goodreads.com/author/list/19527008._Esor_（Goodreads 作者页，可靠事实）
+- Esor 博客，20 年 2000+ 篇｜[原文](https://www.playpcesor.com)
+- 2026-05 AI Agent 前置过滤代表文，一手自述｜[原文](https://www.playpcesor.com/2026/05/ai-agent.html)
+- 2026-07 五层第二大脑架构，一手自述｜[原文](https://www.playpcesor.com/2026/07/ai-ai.html)
+- 2026-06 PARAL AI 团队分类法，一手自述｜[原文](https://www.playpcesor.com/2026/06/chatgpt-ai-ai.html)
+- 2026-03 多 AI 分工与规则系统，一手自述｜[原文](https://www.playpcesor.com/2026/03/ai-chatgptcodexopenclaw.html)
+- 2026-05 Codex 超完整图文教学，一手自述｜[原文](https://www.playpcesor.com/2026/05/codex-ai.html)
+- 2025-07 任务化连结方法论，一手自述｜[原文](https://www.playpcesor.com/2025/07/3-ai.html)
+- 2025-06 ChatGPT 专案第二大脑六步骤，一手自述｜[原文](https://www.playpcesor.com/2025/06/ai-chatgpt.html)
+- 2025-06 任务/经验 vs 资料/知识，一手自述｜[原文](https://www.playpcesor.com/2025/06/ai.html)
+- 2025-05 NotebookLM 稍后阅读工作流，一手自述｜[原文](https://www.playpcesor.com/2025/05/notebooklm-ai.html)
+- 2025-04 ChatGPT 记忆作为 AI 数据库，一手自述｜[原文](https://www.playpcesor.com/2025/04/chatgpt-ai-9.html)
+- 2024-08 ChatGPT PARA 分类法，一手自述｜[原文](https://www.playpcesor.com/2024/08/chatgpt-para-ai.html)
+- 2024-12 ChatGPT 专案 vs NotebookLM，一手自述｜[原文](https://www.playpcesor.com/2024/12/chatgpt-ai-notebooklm.html)
+- 2015-06 第二大脑概念系统化，一手自述｜[原文](https://www.playpcesor.com/2015/06/evernote-onenote-brain.html)
+- 2012-04 Evernote 10 个必备观念，一手自述｜[原文](https://www.playpcesor.com/2012/04/evernote-10.html)
+- 博客作者页，机构自述｜[原文](https://www.playpcesor.com/p/blog-post_21.html)
+- Blogger 个人资料页，机构自述｜[原文](https://www.blogger.com/profile/10426807330996372963)
+- 言果学习讲师页，机构自述｜[原文](https://yanguo.com.tw/teacher/esor)
+- 振邦顾问讲师页，机构自述｜[原文](https://ycctraining.com/lecturer1?id=8)
+- 城邦学院讲师页，机构自述｜[原文](https://cite.com.tw/author/view/id/10)
+- 大人学讲师页，机构自述｜[原文](https://www.darencademy.com/author/view/id/10)
+- ProjectUp 讲师页，机构自述｜[原文](https://www.projectup.net/author/view/id/7)
+- 纬育 TibaMe 讲师页，机构自述｜[原文](https://www.tibame.com/teacher/8a0f10ae)
+- 博客来《Evernote 100 个好方法》初版，可靠事实｜[原文](https://www.silkbook.com/book_detail.asp?goods_ser=kk0354541)
+- 博客来《Evernote 超效率数字笔记术》，可靠事实｜[原文](https://www.books.com.tw/products/0010646035)
+- 博客来《这些 Google 帮我做好的事》，可靠事实｜[原文](https://www.books.com.tw/products/0010642730)
+- 博客来《打开大家的 Evernote 笔记本》，可靠事实｜[原文](https://www.books.com.tw/products/E050012510)
+- 博客来《Evernote 100 个好方法》全新增订版，可靠事实｜[原文](https://www.books.com.tw/products/0010724090)
+- 博客来《比别人快一步的 Google 工作术》，可靠事实｜[原文](https://www.books.com.tw/products/0010751099)
+- 博客来《电脑玩物站长的笔记思考术》，可靠事实｜[原文](https://www.books.com.tw/products/0010775489)
+- 博客来《大脑减压的子弹笔记术》，可靠事实｜[原文](https://www.books.com.tw/products/0010815339)
+- 博客来《时间管理的 30 道难题》，可靠事实｜[原文](https://www.books.com.tw/products/E050068502)
+- 博客来《防弹笔记法》，可靠事实｜[原文](https://www.books.com.tw/products/0010929730)
+- 博客来《高效职场生存法图解》2026-01，可靠事实｜[原文](https://www.books.com.tw/products/0011037672)
+- 豆瓣作者页，可靠事实｜[原文](https://book.douban.com/author/724918/books?sortby=time&format=pic)
+- 百度百科简体版条目，可靠事实｜[原文](https://baike.baidu.com/item/大脑减压的子弹笔记法/55499943)
+- 2023-05 天狗学院直播课，机构自述｜[原文](https://www.tibame.com/course/4115)
+- 2023-08 天狗学院直播课，机构自述｜[原文](https://www.tibame.com/course/4468)
+- 城邦学院《个人数字生产力》电子课，机构自述｜[原文](https://www.cite.tw/courses/485)
+- PressPlay《子弹时间管理术》课，机构自述｜[原文](https://www.pressplay.cc/link/EEED4701)
+- YouTube 官方频道 @esorhuang，机构自述｜[原文](https://www.youtube.com/c/esorhuang)
+- X 账号 @esorhjy，一手自述｜[原文](https://x.com/esorhjy)
+- LinkedIn，机构自述。**注意：LinkedIn 对部分地区（含中国大陆）返回 HTTP 451，需在可访问的网络环境下核对**｜[原文](https://www.linkedin.com/in/esor-huang-2b300897)
+- 读库专访，第三方转载｜[原文](https://www.openbook.org.tw/article/p-1048)
+- Cheers 专访，第三方转载｜[原文](https://www.cheers.com.tw/article/article.action?id=5103136)
+- 经理人专访，第三方转载｜[原文](https://www.managertoday.com.tw/articles/view/66988)
+- 2026 sat.cool 工作流改造术合作课，机构自述｜[原文](https://sat.cool/course/191)
+- 爱范儿「以终为始的子弹笔记」专访，第三方转载｜[原文](https://www.ifanr.com/app/642210)
+- Podcast 下一本读什么 EP.305，第三方转载｜[原文](https://readingoutpost.com/time-mgt-30)
+- 104 职涯家 Blog ChatGPT prompt 教学，第三方转载｜[原文](https://blog.104.com.tw/how-to-prompt-chatgpt-to-write-like-you)
+- Goodreads 作者页，可靠事实｜[原文](https://www.goodreads.com/author/list/19527008._Esor_)
