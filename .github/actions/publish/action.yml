@@ -100,12 +100,12 @@ runs:
 
     # ---------------- ClawHub ----------------
     - name: ClawHub — install CLI
-      if: inputs.publish-clawhub == 'true'
+      if: inputs.publish-clawhub != 'false'
       shell: bash
       run: npm install --global clawhub
 
     - name: ClawHub — check token
-      if: inputs.publish-clawhub == 'true'
+      if: inputs.publish-clawhub != 'false'
       shell: bash
       env:
         CLAWHUB_TOKEN: ${{ inputs.clawhub-token }}
@@ -116,7 +116,7 @@ runs:
         fi
 
     - name: ClawHub — authenticate
-      if: inputs.publish-clawhub == 'true'
+      if: inputs.publish-clawhub != 'false'
       shell: bash
       env:
         CLAWHUB_TOKEN: ${{ inputs.clawhub-token }}
@@ -125,7 +125,7 @@ runs:
         clawhub whoami
 
     - name: ClawHub — publish
-      if: inputs.publish-clawhub == 'true'
+      if: inputs.publish-clawhub != 'false'
       shell: bash
       env:
         SKILL_DIR: ${{ inputs.skill-dir }}
@@ -144,7 +144,7 @@ runs:
 
     # ---------------- SkillHub ----------------
     - name: SkillHub — stage skill with registry metadata
-      if: inputs.publish-skillhub == 'true'
+      if: inputs.publish-skillhub != 'false'
       shell: bash
       env:
         SKILL_DIR: ${{ inputs.skill-dir }}
@@ -193,7 +193,7 @@ runs:
         PY
 
     - name: SkillHub — install CLI
-      if: inputs.publish-skillhub == 'true'
+      if: inputs.publish-skillhub != 'false'
       shell: bash
       # 先下载再执行，不 pipe-to-bash（CWE-494）。
       run: |
@@ -204,7 +204,7 @@ runs:
         echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
     - name: SkillHub — check token
-      if: inputs.publish-skillhub == 'true'
+      if: inputs.publish-skillhub != 'false'
       shell: bash
       env:
         SKILLHUB_API_KEY: ${{ inputs.skillhub-api-key }}
@@ -215,7 +215,7 @@ runs:
         fi
 
     - name: SkillHub — authenticate
-      if: inputs.publish-skillhub == 'true'
+      if: inputs.publish-skillhub != 'false'
       shell: bash
       env:
         SKILLHUB_API_KEY: ${{ inputs.skillhub-api-key }}
@@ -224,7 +224,7 @@ runs:
         skillhub auth whoami
 
     - name: SkillHub — publish
-      if: inputs.publish-skillhub == 'true'
+      if: inputs.publish-skillhub != 'false'
       shell: bash
       env:
         SLUG: ${{ inputs.slug }}

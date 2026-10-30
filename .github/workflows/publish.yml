@@ -41,8 +41,8 @@ jobs:
         with:
           slug: cgartlab-person-profile
           display-name: "CGArtLab Person Profile"
-          dry-run: ${{ inputs.dry_run }}
-          publish-clawhub: ${{ inputs.publish_clawhub }}
-          publish-skillhub: ${{ inputs.publish_skillhub }}
+          dry-run: ${{ inputs.dry_run || false }}
+          publish-clawhub: ${{ github.event_name == 'release' || inputs.publish_clawhub }}
+          publish-skillhub: ${{ github.event_name == 'release' || inputs.publish_skillhub }}
           clawhub-token: ${{ secrets.CLAWHUB_TOKEN }}
           skillhub-api-key: ${{ secrets.SKILLHUB_API_KEY }}
