@@ -7,6 +7,17 @@
 
 > `0.x` 阶段：SKILL.md 的章节结构与输出格式仍可能调整，升级前请阅读对应版本的**一句话概括**。
 
+## [0.2.4](https://github.com/cgartlab/person-profile/compare/v0.2.3...v0.2.4) - 2026-10-30
+> **一句话概括**：0.2.4 修复 registry 发布流水线——release 触发下开关为空，导致 ClawHub / SkillHub 全部被跳过。**升级后 Release 会真正发布到两个 registry。**
+
+### Fixed
+- `publish.yml`：release 事件下 `inputs` 上下文为空，`publish-clawhub` / `publish-skillhub` 传的是空字符串，action 条件 `== 'true'` 不成立 → 所有步骤 skipped。改为 `github.event_name == 'release' || inputs.X`。
+- `action.yml`：条件改为 `!= 'false'`，空值默认发布，只有显式 false 才跳过。
+
+### 说明
+- v0.2.3 已通过本地 `clawhub publish` 与手动 `workflow_dispatch` 发布到 ClawHub / SkillHub；v0.2.4 起 Release 自动发布。
+- Actions 报 `Version already exists` 时不要轻信，用 `clawhub inspect <slug>` 核实 latest 版本。
+
 ## [0.2.3](https://github.com/cgartlab/person-profile/compare/v0.2.2...v0.2.3) - 2026-10-30
 > **一句话概括**：0.2.3 统一「主要参考来源」格式，全库只此一种写法，并新增 `check_sources.py` 机械校验。**修复 #10。**
 

@@ -107,6 +107,7 @@ python scripts/check_bidirectional.py path/to/library/
 - **v0.2.1** — CI 修补：移除 release 自动发布触发，记录 private reusable workflow 教训
 - **v0.2.2** — 发布逻辑内联到本仓库 action，ClawHub / SkillHub 发布恢复
 - **v0.2.3** — 统一「主要参考来源」格式，新增 check_sources.py 机械校验（修复 #10）
+- **v0.2.4** — 修复 registry 发布流水线（release 下开关为空导致全 skipped）
 
 ## 许可
 
